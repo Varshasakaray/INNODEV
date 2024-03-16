@@ -15,7 +15,7 @@ $tool=mysqli_fetch_assoc($run1);
     <title><?=$tool['lang_name']?> Typing Tool-Test your speed</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <script src='jsapi.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script type="text/javascript">
 google.load("elements","1",{
@@ -24,7 +24,7 @@ packages:"transliteration"
 function onLoad(){
         var options={
           sourceLanguage:google.elements.transliteration.LanguageCode.ENGLISH,
-          destinationLanguage:[google.elements.transliteration.LanguageCode.HINDI],
+          destinationLanguage:[google.elements.transliteration.LanguageCode.<?=$tool['lang_value']?>] ,
           shortcutKey:'ctrl+g',
           transliterationEnabled:true
         };
@@ -62,8 +62,9 @@ google.setOnLoadCallback(onLoad);
         <div class="input-group ">
           <textarea class="form-control" id="typingtool"  rows="8" aria-label="with textarea"></textarea>
         </div>
-        <p>Start Typing in English  & it automatically converts in<?=$tool['lang_name']?>,press <keyboard>Ctrl</keyboard>+<keyboard>G</keyboard>
+        <p>Start Typing in English  & it automatically converts in<?=$tool['lang_name']?>,press <kbd>Ctrl</kbd>+<kbd>G</kbd>for toggle between English and  <?=$tool['lang_name']?>
         </p>
+        
 
 
 
