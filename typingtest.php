@@ -12,7 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="icon" href="image/logo.webp">
-    <link rel="stylesheet" href="css/main.css"/>
+    
+    <link rel="stylesheet" href="main.php"/>
     <title>speedyfingers - Learn & Practice Online</title>
 </head>
 <body>
@@ -26,32 +27,80 @@
   </div>
 </nav>
 
+<div class="modal" id="modalui2" tabindex="-1" style="display:none;background-color:rgba(0,0,0,0.8)">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Typing Test Result</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     <h1 id="wname"></h1>
+     <h3 id="acc" class="badge bg-danger"></h3>
+     <h3 id="wpm" class="badge bg-warning"></h3>
+      </div>
+      <div class="modal-footer">
+       
+        <a href="typingtest.php" class="btn btn-primary">Take Test Again</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="modal" id="modalui" tabindex="-1" style="display:block;background-color:rgba(0,0,0,0.8)">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Take Typing Test</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <select name="time" id="time" class="form-select" aria-label="Default select example">
+  <option selected disabled>Time Duration</option>
+  <option value="60">1 Minute</option>
+  <option value="300">5 Minute</option>
+  <option value="600">10 Minute</option>
+</select>
+<div class="input-group mt-3">
+  <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name..">
+</div>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" id="stbutton" class="btn btn-primary">Start Test</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 <div class="container">
 <div class="card mt-4">
-  <h5 class="card-header">Take typing Test
-
-  <div class="timer d-flex flex-row">
+  <h5 class="card-header">Take Typing Test
 
 
-<span class="badge bg-primary d-flex align-items-center m-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
-<path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"/>
-<path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"/>
-</svg> <span id="minute">00</span>:<span id="second">00</span></span>
-
-<span class="badge bg-success d-flex align-items-center m-2">
-Correct : <span id="correct">0</span>
-</span>
-<span class="badge bg-danger d-flex align-items-center m-2">
-Incorrect : <span id="incorrect">0</span>
-</span>
+  <div class="progress mt-3">
+  <div class="progress-bar-animated progress-bar-striped bg-danger" role="progressbar" id="timebar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+
+
+
 </h5>
   <div class="card-body col-12 row">
   
-<pre class="lessonwords">
-    
-</pre>   
-The Indian Armed Forces have been engaged in a number of major military operations, including: the Indo-Pakistani wars of 1947, 1965 and 1971, the Portuguese-Indian War, the Sino-Indian War, the 1967 Cho La incident, the 1987 Sino-Indian skirmish, the Kargil War, and the Siachen conflict among others. India honours its armed forces and military personnel annually on Armed Forces Flag Day, 7 December. Armed with the nuclear triad,[22] the Indian armed forces are steadily undergoing modernisation,[23] with investments in areas such as futuristic soldier systems and missile defence systems
+<div class="lessonwords ms text-start">
+The primary mission of the Indian Army is to ensure national security and national unity, to defend the nation from external aggression and internal threats, and to maintain peace and security within its borders. It conducts humanitarian rescue operations during natural calamities and other disturbances, such as Operation Surya Hope, and can also be requisitioned by the government to cope with internal threats. It is a major component of national power, alongside the Indian Navy and the Indian Air Force. The army has been involved in four wars with neighbouring Pakistan and one with China. Other major operations undertaken by the army include Operation Vijay, Operation Meghdoot, and Operation Cactus. The army has conducted large peace time exercises such as Operation Brasstacks and Exercise Shoorveer, and it has also been an active participant in numerous United Nations peacekeeping missions, including those in Cyprus, Lebanon, Congo, Angola, Cambodia, Vietnam, Namibia, El Salvador, Liberia, Mozambique, South Sudan, and Somalia.
+</div>   
+
 
   </div>
 
@@ -60,18 +109,17 @@ The Indian Armed Forces have been engaged in a number of major military operatio
 
 <div class="card mt-4 keycover">
   <div class="card-body col-12 row">
-  <div class="input-group ">
-          <textarea class="form-control" id="typingtool"  rows="8" aria-label="with textarea"></textarea>
-  </div>
-
+  <div class="input-group">
+  <textarea id="typingtool" class="form-control" rows="8" aria-label="With textarea"></textarea>
+</div>
   </div>
 
 
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<script src="js/keyboard.js"></script>
-<script src="js/timer.js"></script>
+<script src="js/typingtest.js"></script>
+
 
 
 </body>

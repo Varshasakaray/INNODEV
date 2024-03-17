@@ -21,7 +21,7 @@ $lesson=mysqli_fetch_assoc($run1);
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-center">
-      TypingNinja
+      Speedy Fingers
     </a>
   </div>
 </nav>
