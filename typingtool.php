@@ -4,6 +4,7 @@ require 'php/db.php';
 
 <?php
 $query1="SELECT * FROM typingtools WHERE id={$_GET['lang']}";
+
 $run1=mysqli_query($db,$query1);
 $tool=mysqli_fetch_assoc($run1);  
 ?>

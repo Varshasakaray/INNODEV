@@ -44,7 +44,7 @@
           <a href="main.php?lang=1" class="btn btn-primary col-3 m-2">Telugu Typing</a>
           <a href="main.php?lang=2" class="btn btn-primary col-3 m-2">Hindi Typing</a>
           <a href="main.php?lang=3" class="btn btn-primary col-3 m-2">Punjabi Typing</a>
-          <a href="main.php?lang=4" class="btn btn-primary col-3 m-2">Malyalam Typing</a>
+          <a href="main.php?lang=4" class="btn btn-primary col-3 m-2">Malayalam Typing</a>
           <a href="main.php?lang=5" class="btn btn-primary col-3 m-2">Kannada Typing</a>
           <a href="main.php?lang=6" class="btn btn-primary col-3 m-2">Marathi Typing</a>
           <a href="main.php?lang=7" class="btn btn-primary col-3 m-2">Tamil Typing</a>

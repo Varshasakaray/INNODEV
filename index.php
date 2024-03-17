@@ -21,7 +21,7 @@
             
           if($user_data['password']== $password)
           {
-            header("location: mainpage.php");
+            header("location: main.php");
             die;
           }
 
