@@ -32,7 +32,7 @@
         </div>
       </nav>
       <div class="box">
-        <p>innodev project </p>
+        <p></p>
       </div>
 
       <div class="container">
