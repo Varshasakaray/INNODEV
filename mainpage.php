@@ -27,7 +27,7 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="image/logo.webp" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Test your speed
+            Speedy Fingers
           </a>
         </div>
       </nav>
