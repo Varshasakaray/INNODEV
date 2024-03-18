@@ -63,7 +63,7 @@ google.setOnLoadCallback(onLoad);
         <div class="input-group ">
           <textarea class="form-control" id="typingtool"  rows="8" aria-label="with textarea"></textarea>
         </div>
-        <p>Start Typing in English  & it automatically converts in<?=$tool['lang_name']?>,press <kbd>Ctrl</kbd>+<kbd>G</kbd>for toggle between English and  <?=$tool['lang_name']?>
+        <p>Start Typing in English  & it automatically converts in <?=$tool['lang_name']?>, press <kbd>Ctrl</kbd>+<kbd>G</kbd> for toggle between English and  <?=$tool['lang_name']?>
         </p>
         
 
