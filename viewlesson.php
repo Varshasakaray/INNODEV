@@ -13,7 +13,7 @@ $lesson=mysqli_fetch_assoc($run1);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/main.css"/>
-    <title>TypingNinja - Learn & Practice Online</title>
+    <title>speedyfingers - Learn & Practice Online</title>
 </head>
 <body>
     <!-- Image and text -->
