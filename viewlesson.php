@@ -11,16 +11,16 @@ $lesson=mysqli_fetch_assoc($run1);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="icon" href="image/logo.webp">
+    <link rel="stylesheet" href="main.php"/>
     <title>speedyfingers - Learn & Practice Online</title>
 </head>
 <body>
     <!-- Image and text -->
-<nav class="navbar navbar-dark bg-danger">
+<nav class="navbar navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="img/logo.png" alt="" width="30" height="24" class="d-inline-block align-center">
+      <img src="image/logo.webp" alt="" width="30" height="24" class="d-inline-block align-center">
       Speedy Fingers
     </a>
   </div>
@@ -157,15 +157,6 @@ Incorrect : <span id="incorrect">0</span>
 <button class="btn btn-outline-primary flex-fill">?</button>
 <button class="btn btn-outline-primary flex-fill">/</button>
 </div>
-
-
-
-
-
-
-
-
-
 
 </div>
   </div>
