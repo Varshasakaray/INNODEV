@@ -1,9 +1,18 @@
 <?php
-// require 'php/db.php';
-// $query1="SELECT * FROM typinglessons WHERE id={$_GET['lesson']}";
-// $run1=mysqli_query($db,$query1);
-// $lesson=mysqli_fetch_assoc($run1);
+// Array of random texts
+$random_texts = [
+    "The primary mission of the Indian Army is to ensure national security and national unity, to defend the nation from external aggression and internal threats, and to maintain peace and security within its borders.",
+    "It conducts humanitarian rescue operations during natural calamities and other disturbances, such as Operation Surya Hope, and can also be requisitioned by the government to cope with internal threats.",
+    "It is a major component of national power, alongside the Indian Navy and the Indian Air Force.",
+    "The army has been involved in four wars with neighbouring Pakistan and one with China.",
+    "Other major operations undertaken by the army include Operation Vijay, Operation Meghdoot, and Operation Cactus.",
+    "The army has conducted large peace time exercises such as Operation Brasstacks and Exercise Shoorveer, and it has also been an active participant in numerous United Nations peacekeeping missions, including those in Cyprus, Lebanon, Congo, Angola, Cambodia, Vietnam, Namibia, El Salvador, Liberia, Mozambique, South Sudan, and Somalia."
+];
+
+// Select a random text
+$random_text = $random_texts[array_rand($random_texts)];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,13 +56,6 @@
   </div>
 </div>
 
-
-
-
-
-
-
-
 <div class="modal" id="modalui" tabindex="-1" style="display:block;background-color:rgba(0,0,0,0.8)">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -80,31 +82,22 @@
   </div>
 </div>
 
-
-
-
 <div class="container">
 <div class="card mt-4">
   <h5 class="card-header">Take Typing Test
-
 
   <div class="progress mt-3">
   <div class="progress-bar-animated progress-bar-striped bg-danger" role="progressbar" id="timebar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 
-
-
 </h5>
   <div class="card-body col-12 row">
   
 <div class="lessonwords ms text-start">
-The primary mission of the Indian Army is to ensure national security and national unity, to defend the nation from external aggression and internal threats, and to maintain peace and security within its borders. It conducts humanitarian rescue operations during natural calamities and other disturbances, such as Operation Surya Hope, and can also be requisitioned by the government to cope with internal threats. It is a major component of national power, alongside the Indian Navy and the Indian Air Force. The army has been involved in four wars with neighbouring Pakistan and one with China. Other major operations undertaken by the army include Operation Vijay, Operation Meghdoot, and Operation Cactus. The army has conducted large peace time exercises such as Operation Brasstacks and Exercise Shoorveer, and it has also been an active participant in numerous United Nations peacekeeping missions, including those in Cyprus, Lebanon, Congo, Angola, Cambodia, Vietnam, Namibia, El Salvador, Liberia, Mozambique, South Sudan, and Somalia.
+<?php echo $random_text; ?>
 </div>   
 
-
   </div>
-
-
 </div>
 
 <div class="card mt-4 keycover">
@@ -113,14 +106,9 @@ The primary mission of the Indian Army is to ensure national security and nation
   <textarea id="typingtool" class="form-control" rows="8" aria-label="With textarea"></textarea>
 </div>
   </div>
-
-
 </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script src="js/typingtest.js"></script>
-
-
-
 </body>
 </html>
